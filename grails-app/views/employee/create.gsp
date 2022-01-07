@@ -17,11 +17,11 @@
     <g:radio name="profile" value="Ellipse -3.png"/><g:img dir="images" file="Ellipse -3.png" width="40" height="40"/>
         <g:radio name="profile" value="Ellipse -4.png" /><g:img dir="images" file="Ellipse -4.png" width="40" height="40"/></span></div >
     <br />
-    <div >  <span class="attributes">  Gender : </span> <span class="gfields"> <g:radio name="gender" value="male" /> Male <g:radio name="gender" value="female" /> Female </span> </div> <br />
-    <div >  <span class="attributes"> Departments :  </span> <span class="dfields">  <g:checkBox name="departments" value="Enginner"  checked="true"/> Engineer <g:checkBox name="departments" value="Sales" /> Sales <g:checkBox name="departments" value="Finance" /> Finance </span></div> <br />
+    <div >  <span class="attributes">  Gender : </span> <span class="gfields"> <g:radio name="gender" value="Male" /> Male <g:radio name="gender" value="Female" /> Female </span> </div> <br />
+    <div >  <span class="attributes"> Departments :  </span> <span class="dfields">  <g:checkBox name="departments" value="Enginner"  checked="true"/> Engineer <g:checkBox name="departments" value="HR" /> HR <g:checkBox name="departments" value="Sales" /> Sales <g:checkBox name="departments" value="Finance" /> Finance </span></div> <br />
     <div > <span class="attributes"> Salary :</span> <span class="sfields"> <g:field type="number" name="salary" min="10000" max="1000000" /> </span> </div> <br />
     <div >  <span class="attributes">StartDate : </span> <span class="datefields">  <g:datePicker name="startDate" value="${new Date()}"
-                                                                                                  noSelection="['':'-Choose-']"/> </span></div> <br />
+                                                                                                  precision="day" years="${1980..2022}"/> </span></div> <br />
     <g:submitButton name="create" class="button" value="${message(code: 'default.button.create.label', default: 'Create')}" />
 
 </g:form>
